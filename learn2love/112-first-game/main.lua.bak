@@ -1,0 +1,22 @@
+--! main.lua
+
+print("Enter your name: ")
+name = io.read()
+
+print("What’s your favorite food?")
+food = io.read()
+
+print("Your name is " .. name .. " and your favorite food is " .. food .. ".")
+
+print("What’s your favorite number?")
+data = io.read()
+
+print(type(data))
+
+print(math.random(100))
+
+print(os.time)
+
+seed_number = os.time()
+math.randomseed(seed_number)
+print(math.random(100))

@@ -1,0 +1,17 @@
+--! circle.lua
+
+Circle = Shape:extend()
+
+function Circle:new(x, y, radius)
+	Circle.super.new(self, x, y)
+	self.radius = radius
+end
+
+function Circle:update(dt)
+	self.x = self.x + self.speed * dt
+end
+
+function Circle:draw()
+	love.graphics.circle("line", self.x, self.y, self.radius)
+end
+
